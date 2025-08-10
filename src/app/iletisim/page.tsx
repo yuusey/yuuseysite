@@ -68,7 +68,7 @@ export default function Page() {
       <section className="flex-grow p-6">
         {/* Buraya rehberlerin listesi veya içerik gelecek */}
         <h1 className="text-3xl font-semibold mb-4">İletişim.</h1>
-        <p>gotum</p>
+        <p>yok gerek yok.</p>
 
         {/* Video ekleme */}
         <div className="mt-6 max-w-xl mx-auto">
@@ -76,7 +76,7 @@ export default function Page() {
             controls
             width="100%"
             className="rounded-lg shadow-lg"
-            src="/videos/corleoneedit.mp4"
+            src="/videos/babaaramabenibukonulardanya.mp4"
           >
             Tarayıcınız video etiketini desteklemiyor.
           </video>

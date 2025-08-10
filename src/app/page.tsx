@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 function normalizeTurkishUrl(text: string): string {
   return text
     .toLowerCase()
@@ -16,31 +19,38 @@ export default function Page() {
       <header style={{ borderColor: '#a00404' }} className="border-b-4 text-white">
         <div className="max-w-7xl w-full mx-auto px-4 py-4 flex justify-between items-center">
           {/* PROFİL & İSİM KISMI */}
-          <a
-            href="/"
-            className="flex items-center space-x-4 hover:opacity-80 transition duration-200"
-          >
-            <img
+          <Link href="/" className="flex items-center space-x-4 hover:opacity-80 transition duration-200">
+            <Image
               src="/3.jpg"
               alt="Profil Fotoğrafım"
-              className="w-10 h-10 object-cover rounded-full shadow-lg"
+              width={40}
+              height={40}
+              className="object-cover rounded-full shadow-lg"
             />
             <span className="text-3xl font-bold">Yuusey</span>
-          </a>
+          </Link>
 
           {/* NAVBAR + SEARCH */}
           <div className="flex items-center space-x-8">
             <nav className="flex space-x-6">
               {["Anasayfa", "Yazılar", "Hakkımda", "İletişim"].map((item, index) => {
-                const href = item === "Anasayfa" ? "/" : `/${normalizeTurkishUrl(item)}`;
+                let href = "/";
+                if (item === "Anasayfa") {
+                  href = "/";
+                } else if (item === "İletişim") {
+                  href = "/iletisim";
+                } else {
+                  href = `/${normalizeTurkishUrl(item)}`;
+                }
+
                 return (
-                  <a
+                  <Link
                     key={index}
                     href={href}
                     className="relative font-bold text-white transition duration-300 glow-hover"
                   >
                     {item}
-                  </a>
+                  </Link>
                 );
               })}
             </nav>
