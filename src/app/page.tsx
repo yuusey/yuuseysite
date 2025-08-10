@@ -68,7 +68,19 @@ export default function Page() {
       <section className="flex-grow p-6">
         {/* Buraya rehberlerin listesi veya içerik gelecek */}
         <h1 className="text-3xl font-semibold mb-4">Kazandın.</h1>
-        <p>Burada çıkış yolunun arg&apos;yi çözmek olduğunu kim söyledi?</p>
+        <p>Sana burada ana şeyin Arg olmadığını söylesem?</p>
+
+        {/* Video ekleme */}
+        <div className="mt-6 max-w-xl mx-auto">
+          <video
+            controls
+            width="100%"
+            className="rounded-lg shadow-lg"
+            src="/videos/dextergözetleme.mp4"
+          >
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+        </div>
       </section>
     </main>
   )
