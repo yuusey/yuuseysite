@@ -67,7 +67,7 @@ export default function Page() {
 
       <section className="flex-grow p-6">
         {/* Buraya rehberlerin listesi veya içerik gelecek */}
-        <h1 className="text-3xl font-semibold mb-4">Hakkımda</h1>
+        <h1 className="text-3xl font-semibold mb-4">Hakkımda.</h1>
         <p>gotum</p>
 
         {/* Video ekleme */}
