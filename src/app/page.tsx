@@ -68,7 +68,7 @@ export default function Page() {
       <section className="flex-grow p-6">
         {/* Buraya rehberlerin listesi veya içerik gelecek */}
         <h1 className="text-3xl font-semibold mb-4">Kazandın.</h1>
-        <p>Burada çıkış yolunun arg'yi çözmek olduğunu kim söyledi?</p>
+        <p>Burada çıkış yolunun arg&apos;yi çözmek olduğunu kim söyledi?</p>
       </section>
     </main>
   )
