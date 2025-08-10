@@ -76,7 +76,7 @@ export default function Page() {
             controls
             width="100%"
             className="rounded-lg shadow-lg"
-            src="/videos/dextergözetleme.mp4"
+            src="/videos/dextergozetleme.mp4"
           >
             Tarayıcınız video etiketini desteklemiyor.
           </video>
